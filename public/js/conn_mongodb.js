@@ -26,7 +26,7 @@ function connParse() {
     Parse.initialize("steelcaseErgoSeatEvaId");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
 }
-
+/*
 function addElement() {
     connParse();
 
@@ -41,9 +41,9 @@ function addElement() {
     .catch(function(error) {
         // There was an error.
     });
-}
+}*/
 
-/*function insert(){
+function insert(){
     
     connParse();
 
@@ -62,7 +62,7 @@ function addElement() {
             db.close();
         });
     });
-}*/
+}
 
 
 
