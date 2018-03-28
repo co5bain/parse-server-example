@@ -1,7 +1,7 @@
 // Example express application adding the parse-server module to expose Parse
 // compatible API routes.
 
-var express = require('express');
+//var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 
@@ -53,3 +53,38 @@ httpServer.listen(port, function() {
 
 // This will enable the Live Query real-time server
 ParseServer.createLiveQueryServer(httpServer);
+
+
+
+function addElement() {
+
+    var mod = document.getElementById("mod").value;
+    var rap = document.getElementById("rap").value;
+    var son = document.getElementById("son").value;
+    var grap = document.getElementById("grap").value;
+    var sat = document.getElementById("sat").value;
+    var rec = document.getElementById("rec").value;
+    var comm = document.getElementById("comm").value;
+    var email = document.getElementById("email").value;
+
+    var myobj = { Modelo: '"'+mod+'"', 
+        Rapidez: '"'+rap+'"', 
+        Sonido: '"'+son+'"', 
+        Graficos: '"'+grap+'"', 
+        Satisfaccion: '"'+sat+'"', 
+        Recomm: '"'+rec+'"', 
+        Comentario: '"'+comm+'"', 
+        Correo: '"'+email+'"'};
+    
+    //Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaMasterKey");
+    //Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
+
+    var query = new Parse.Query("testNieu");
+    query.aggregate(myobj)
+    .then(function(results) {
+        // results contains sum of score field and stores it in results[0].total
+    })
+    .catch(function(error) {
+        // There was an error.
+    });
+}
