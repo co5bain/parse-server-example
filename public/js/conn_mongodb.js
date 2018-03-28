@@ -33,8 +33,6 @@ function addElement() {
     Parse.initialize("steelcaseErgoSeatEvaId");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
 
-    getElem();
-
     var query = new Parse.Query("testNieu");
     query.aggregate(myobj)
     .then(function(results) {
