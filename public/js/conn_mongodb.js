@@ -1,6 +1,17 @@
 var myobj;
 
 function getElem() {
+    
+    //alert(JSON.stringify(obj));
+}
+
+function connParse() {
+    //var Parse = requirejs('parse/node');
+    
+}
+
+function addElement() {
+
     var mod = document.getElementById("mod").value;
     var rap = document.getElementById("rap").value;
     var son = document.getElementById("son").value;
@@ -18,15 +29,6 @@ function getElem() {
         Recomm: '"'+rec+'"', 
         Comentario: '"'+comm+'"', 
         Correo: '"'+email+'"'};
-    //alert(JSON.stringify(obj));
-}
-
-function connParse() {
-    //var Parse = requirejs('parse/node');
-    
-}
-
-function addElement() {
     
     Parse.initialize("steelcaseErgoSeatEvaId");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
