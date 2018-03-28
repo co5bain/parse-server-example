@@ -25,11 +25,6 @@ require(['parse/node'], function (parse/node) {
     //foo is now loaded.
 });
 
-function connParse() {
-    var Parse = requirejs('parse/node');
-    Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaMasterKey");
-    Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
-}
 
 function addElement() {
     connParse();
