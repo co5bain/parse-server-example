@@ -21,14 +21,7 @@ function getElem() {
     //alert(JSON.stringify(obj));
 }
 
-function importarScript(nombre) {
-    var s = document.createElement("script");
-    s.src = nombre;
-    document.querySelector("head").appendChild(s);
-}
-
 function connParse() {
-    importarScript("js/parse.js");
     var Parse = requirejs('parse');
     Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaMasterKey");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
