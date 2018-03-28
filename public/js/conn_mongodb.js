@@ -21,6 +21,10 @@ function getElem() {
     //alert(JSON.stringify(obj));
 }
 
+require(['parse/node'], function (parse/node) {
+    //foo is now loaded.
+});
+
 function connParse() {
     var Parse = requirejs('parse/node');
     Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaMasterKey");

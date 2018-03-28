@@ -7,7 +7,7 @@
   "env": {
     "PARSE_MOUNT": {
       "description": "Configure Parse API route.",
-      "value": "/parse"
+      "value": "https://steelcase-ergo-seat-eva.herokuapp.com/parse"
     },
     "APP_ID": {
       "description": "A unique identifier for your app.",

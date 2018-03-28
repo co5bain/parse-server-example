@@ -3,10 +3,10 @@ env: flex
 
 env_variables:
   # --REQUIRED--
-  DATABASE_URI: mongodb://localhost:27017/dev
-  APP_ID: <your-app-id>
-  MASTER_KEY: <your-master-key>
-  SERVER_URL: https://your-project-id.appspot.com/parse
+  DATABASE_URI: mongodb://heroku_r2m6vcd3:kgbto69i8j3taqpcitt405fe29@ds131826.mlab.com:31826/heroku_r2m6vcd3
+  APP_ID: steelcaseErgoSeatEvaId
+  MASTER_KEY: steelcaseErgoSeatEvaMasterKey
+  SERVER_URL: https://steelcase-ergo-seat-eva.herokuapp.com/parse
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse
