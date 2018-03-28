@@ -23,13 +23,13 @@ function getElem() {
 
 function connParse() {
     //var Parse = requirejs('parse/node');
+    
+}
+
+function addElement() {
+    
     Parse.initialize("steelcaseErgoSeatEvaId");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
-}
-/*
-function addElement() {
-    connParse();
-
 
     getElem();
 
@@ -41,11 +41,13 @@ function addElement() {
     .catch(function(error) {
         // There was an error.
     });
-}*/
+}
 
+/*
 function insert(){
     
-    connParse();
+    Parse.initialize("steelcaseErgoSeatEvaId");
+    Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
 
     var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://heroku_r2m6vcd3:kgbto69i8j3taqpcitt405fe29@ds131826.mlab.com:31826/heroku_r2m6vcd3";
@@ -62,7 +64,7 @@ function insert(){
             db.close();
         });
     });
-}
+}*/
 
 
 
