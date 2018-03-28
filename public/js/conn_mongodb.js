@@ -47,7 +47,7 @@ function insert(){
     
     connParse();
 
-    var MongoClient = require('mongodb').MongoClient;
+    //var MongoClient = require('mongodb').MongoClient;
     var url = "mongodb://heroku_r2m6vcd3:kgbto69i8j3taqpcitt405fe29@ds131826.mlab.com:31826/heroku_r2m6vcd3";
 
     MongoClient.connect(url, function(err, db) {
