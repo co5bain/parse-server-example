@@ -1,0 +1,99 @@
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+
+.title-form{
+  background: #000000;
+  opacity: 0.9;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  text-align: center;
+  text-indent: 4px;
+  line-height: 35px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.form-test{
+  background: #000000;
+  opacity: 0.7;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 20%;
+  width: 60%;
+  height: auto;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  text-align: center;
+  text-indent: 4px;
+  line-height: 35px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.formulario > div  {
+  position: relative;
+  border-bottom: 1.5px solid #ccc;
+}
+
+.formulario label {
+  display: inline-block;
+  cursor: pointer;
+  color: #135b82;
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.formulario label .radio {
+  display: inline-block;
+  cursor: pointer;
+  color: #135b82;
+  position: left;
+  padding: 5px 5px 5px 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.form-radio > input{
+  display: inline-block;
+  cursor: pointer;
+  color: #135b82;
+  position: relative;
+  left: 50%;
+  padding: 5px 5px 5px 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.formulario label:hover {
+  background: rgba(0, 116, 217, 0.1);
+}
+
