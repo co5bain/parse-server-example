@@ -30,7 +30,7 @@ function addElement() {
         Comentario: '"'+comm+'"', 
         Correo: '"'+email+'"'};
     
-    Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaKey");
+    Parse.initialize("steelcaseErgoSeatEvaId", "steelcaseErgoSeatEvaMasterKey");
     Parse.serverURL = 'https://steelcase-ergo-seat-eva.herokuapp.com/parse'
 
     var query = new Parse.Query("testNieu");
