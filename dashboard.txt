@@ -1,0 +1,1 @@
+parse-dashboard --appId steelcaseErgoSeatEvaId --masterKey steelcaseErgoSeatEvaMasterKey --serverURL "https://steelcase-ergo-seat-eva.herokuapp.com/parse" --appName steelcase-ergo-seat-eva
